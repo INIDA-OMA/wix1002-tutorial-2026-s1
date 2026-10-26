@@ -24,8 +24,6 @@ if (number % 2 == 0) {
 }
 ```
 
-An even integer has remainder zero when divided by 2.
-
 ### c. Determine whether a character is a capital letter
 
 Assume `letter` is a `char`. This checks the English uppercase range A through Z.
@@ -84,8 +82,6 @@ switch (day) {
 }
 ```
 
-Each `break` stops execution from falling through into the following case.
-
 ## Question 2 — Correct the statements
 
 ### a. Compare two numbers
@@ -108,8 +104,6 @@ if (x > y && x > z) {
 }
 ```
 
-This condition requires `x` to be strictly larger than both other numbers. Ties are not reported as a unique largest value.
-
 ### c. Compare two strings by content
 
 Use `.equals()` to compare string contents. The original `else (condition)` is invalid; an `else if` needs an `if` condition, while this case needs a plain `else`.
@@ -124,8 +118,6 @@ if (s1.equals(s2)) {
     System.out.println("They are not equal strings.");
 }
 ```
-
-The example values initialize the strings so this fragment can run. Replace them with the strings to compare.
 
 ### d. Test whether either number is positive
 
@@ -192,8 +184,6 @@ if (c > largest) {
 System.out.println("The biggest number is " + largest);
 ```
 
-Here `a`, `b`, and `c` are assumed to be integers already read from the user.
-
 ## Question 5 — Determine whether a year is a leap year
 
 A year is a leap year when it is divisible by 400, or when it is divisible by 4 but not by 100. The divisibility-by-400 rule makes century years such as 2000 leap years, while 1900 is not.
@@ -208,4 +198,3 @@ if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) {
 }
 ```
 
-Here `year` is an integer already read from the user. Examples: `2000` is a leap year; `1900` is not; `2024` is a leap year.
